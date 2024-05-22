@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store - Sản Phẩm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Game Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="products.html">Sản Phẩm</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="products">
+            <h1>Sản Phẩm</h1>
+            <div class="category-filter">
+                <button onclick="filterProducts('all')">Tất cả</button>
+                <button onclick="filterProducts('console')">Máy chơi game Console</button>
+                <button onclick="filterProducts('accessory')">Phụ kiện</button>
+            </div>
+            <div class="category" data-category="console">
+                <h3>Máy chơi game Console</h3>
+                <div class="product">
+                    <img src="Console1.jpg" alt="Console 1">
+                    <h4>Máy chơi game Retro Video Game Console DDR3 256MB 2.4G Wireless</h4>
+                    <p>Giá: 3 triệu</p>
+                    <button onclick="addToCart('Console 1')">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product">
+                    <img src="Console2.jpg" alt="Console 2">
+                    <h4>Máy chơi game cầm tay PS2</h4>
+                    <p>Giá: 2 triệu 500 ngàn</p>
+                    <button onclick="addToCart('Console 2')">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product">
+                    <img src="Console3.jpg" alt="Console 3">
+                    <h4>Máy chơi game Nintendo Switch</h4>
+                    <p>Giá: 11 triệu</p>
+                    <button onclick="addToCart('Console 3')">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product">
+                    <img src="Console4.jpg" alt="Console 4">
+                    <h4>Máy chơi game PS5</h4>
+                    <p>Giá: 10 triệu</p>
+                    <button onclick="addToCart('Console 4')">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <div class="category" data-category="accessory">
+                <h3>Phụ kiện</h3>
+                <div class="product">
+                    <img src="accessory1.jpg" alt="Accessory 1">
+                    <h4>Máy chơi game cầm tay kết nối với điện thoại</h4>
+                    <p>Giá: 90 ngàn</p>
+                    <button onclick="addToCart('Accessory 1')">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product">
+                    <img src="accessory2.jpg" alt="Accessory 2">
+                    <h4>Phụ kiện máy chơi game Switch</h4>
+                    <p>Giá: 100 ngàn</p>
+                    <button onclick="addToCart('Accessory 2')">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Game Store</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
